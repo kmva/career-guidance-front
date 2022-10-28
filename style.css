@@ -63,8 +63,7 @@ body{
 .main-nav__items{
     list-style: none;
     display: flex;
-    width: 571px;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .main-nav__item a{
@@ -72,6 +71,7 @@ body{
     font-family: 'Manrope Medium';
     color: #000;
     font-size: 20px;
+    margin-left: 32px;
 }
 
 
@@ -125,35 +125,9 @@ body{
 }
 
 .main-section__image{
-    position: relative;
-    align-self: flex-end;
-}
-
-.main-section__image .people1{
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    bottom: 0;
-    display: block;
-    position: relative;
-    z-index: 1;
-    right: -22px;
-}
-
-.main-section__image .people2{
     position: absolute;
-    z-index: 2;
-    bottom: 170px;
-    right: 32px;
-}
-
-.ellipse{
-    width: 579px;
-    height: 579px;
-    border-radius: 100%;
-    background-color: #FFE492;
-    position: absolute;
-    bottom: 0;
-    right: -22px;
+    right: 0;
+    top: 0;
 }
 
 .elem{
@@ -288,12 +262,11 @@ body{
     line-height: 27px;
     text-align: center;
     letter-spacing: -0.02em;
+    width: 339px;
+
 }
 
-
 .to-help__item:last-child p{
-    margin: 0;
-    font-family: 'Manrope';
     font-size: 18px;
     line-height: 25px;
     text-align: center;
@@ -366,11 +339,16 @@ body{
     color: #81859C;
 }
 
+.articles-title{
+    margin: 0;
+}
+
 .articles-title a{
     font-family: 'Manrope Bold';
     font-size: 36px;
     line-height: 44px;
     letter-spacing: -0.02em;
+    display: inline-block;
     margin: 24px 0;
     padding-right: 12px;
     text-decoration: none;
@@ -530,7 +508,7 @@ body{
 }
 
 .dashboard-item img{
-    width: 100%;
+    width: 412px;
     height: 223px;
     object-fit: cover;
     border-radius: 15px;
@@ -560,6 +538,10 @@ body{
     color: #81859C;
 }
 
+.dashboard-title{
+    margin: 0;
+}
+
 .dashboard-title a{
     font-family: 'Manrope SemiBold';
     font-size: 20px;
@@ -567,6 +549,7 @@ body{
     letter-spacing: -0.02em;
     text-decoration: none;
     color: #000;
+    display: inline-block;
     margin: 24px 0;
     margin-bottom: 16px;
     padding-right: 12px;
@@ -666,16 +649,6 @@ body{
     justify-content: space-between;
 }
 
-
-/* .partners-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 310px;
-    padding: 0 14.5px;
-} */
 
 .partners-item p{
     font-family: 'Manrope';
@@ -836,4 +809,15 @@ footer .sign p{
 footer .sign{
     padding: 32px 0;
     border-top: 1px solid rgba(95, 125, 149, 0.4);
+}
+
+
+.footer-phone,
+.footer-mail,
+.mob-address,
+.footer-mob__logo,
+.mob-menu,
+.mob-menu__burger,
+.backdrop{
+    display: none;
 }

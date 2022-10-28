@@ -6,15 +6,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
     <header class="main-header">
+        <div class="backdrop"></div>
         <div class="logo">
             <img src="./svg/informatio.svg" alt="">
             <img src="./svg/fond.svg" alt="">
         </div>
+        <div class="mob-menu__burger"><img src="./svg/burger.svg" alt=""></div>
         <nav class="main-nav">
+            <div class="mob-menu">
+                <h4>Меню</h4>
+                <div><img src="./svg/cross.svg" alt=""></div>
+            </div>
             <ul class="main-nav__items">
                 <li class="main-nav__item"><a href="">Главная</a> </li>
                 <li class="main-nav__item"><a href="">О нас</a></li>
@@ -37,11 +44,7 @@
                 <p>Мы понимаем, как это сложно – определиться с будущей профессией, поэтому хотим помочь тебе сделать
                     выбор, исходя из твоих увлечений и навыков.</p>
             </header>
-            <div class="main-section__image">
-                <div class="ellipse"></div>
-                <img class="people1" src="./images/people1.png" alt="">
-                <img class="people2" src="./images/people2.png" alt="">
-            </div>
+            <img class="main-section__image" src="./images/people1.png" alt="">
         </section>
         <section class="to-help">
             <header class="to-help__header">
@@ -54,14 +57,14 @@
                         <img src="./svg/icon1.svg" alt="">
                     </div>
                     <h3>Учащимся</h3>
-                    <p>выбрать подходящую профессию по<br> душе и разглядеть свой потенциал</p>
+                    <p>выбрать подходящую профессию по душе и разглядеть свой потенциал</p>
                 </li>
                 <li class="to-help__item">
                     <div class="to-help__icon">
                         <img src="./svg/icon2.svg" alt="">
                     </div>
                     <h3>Родителям</h3>
-                    <p>понять желания детей и научиться<br> принимать и поддерживать их выбор</p>
+                    <p>понять желания детей и научиться принимать и поддерживать их выбор</p>
                 </li>
                 <li class="to-help__item">
                     <div class="to-help__icon">
@@ -73,7 +76,7 @@
             </ul>
         </section>
 
-        <section class="articles">
+      <section class="articles">
             <header class="articles-header">
                 <h2>Статьи</h2>
                 <img src="./images/Vector3.png" alt="">
@@ -291,17 +294,27 @@
                 <li><a href="">Учащимся</a></li>
             </ul>
             <ul class="contacts">
-                <li>Контакты</li>
-                <li><a href="">aslan@kcno.ru</a></li>
+                <li class="desktop-contacts">Контакты</li>
+                <li class="desktop-contacts"><a href="">aslan@kcno.ru</a></li>
+
+                <li class="footer-phone">Номер телефоне</li>
                 <li><a href="">+7 (928) 004 17 01</a></li>
                 <li><a href="">+7 (963) 593 35 33</a></li>
+
+                <li class="footer-mail title">Электронный адрес</li>
+                <li class="footer-mail"><a href="">aslan@kcno.ru</a></li>
             </ul>
             <div class="address">
                 <h4>Офис</h4>
+                <h4 class="mob-address">Юридический адрес</h4>
                 <p>г. Грозный, пр-т им. В.В. Путина, 30, “ЦУМ”, офис 20</p>
             </div>
         </div>
         <div class="sign">
+            <div class="footer-mob__logo">
+                <img class="logo-informatio" src="./svg/informatio-footer.svg" alt="">
+                <img class="logo-fond" src="./svg/fond-footer.svg" alt="">
+            </div>
             <p>©2022 IN-Formatio.</p>
         </div>
     </footer>
