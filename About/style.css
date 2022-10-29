@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Manrope Light";
+    src: url("../fonts/Manrope-Light.ttf");
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Manrope Medium";
+    src: url("../fonts/Manrope-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Manrope SemiBold";
+    src: url("../fonts/Manrope-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Manrope Bold";
+    src: url("../fonts/Manrope-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Manrope ExtraBold";
+    src: url("../fonts/Manrope-ExtraBold.ttf");
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+main {
+    width: 1342px;
+    margin: auto;
+    padding: 0 70px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+aside .menu-title {
+    font-size: 24px;
+    font-family: "Manrope SemiBold";
+    margin: 0;
+}
+
+aside {
+    width: 195px;
+}
+
+aside .menu-items {
+    margin: 32px 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside .menu-item a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Manrope SemiBold";
+}
+
+aside .menu-item {
+    margin-bottom: 16px;
+}
+
+
+/* общие стили */
+
+section {
+    width: 970px;
+    margin-bottom: 240px;
+
+}
+
+
+section h2 {
+    font-family: 'Manrope Bold';
+    font-size: 64px;
+    letter-spacing: -0.02em;
+    margin: 0 0 70px 0;
+    position: relative;
+}
+
+section p {
+    font-family: 'Manrope';
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    margin: 0 0 20px 0;
+    line-height: 33px;
+}
+
+
+section h2 span{
+    position: relative;
+}
+
+.title-vector{
+    position: absolute;
+    bottom: 5px;
+    right: -40px;
+    margin-bottom: 0 !important;
+    z-index: -1;
+}
+
+
+/* about start */
+
+.about-start{
+    /* margin-bottom: 240px; */
+}
+
+.about-start p:first-child{
+    margin: 0 0 24px 0;
+}
+
+
+.about-start img{
+    margin-bottom: 48px;
+}
+
+
+.about-start ul{
+    /* margin: 16px 0 31px 0; */
+    padding-left: 32px;
+    list-style: url("./svg/list-icon.svg");
+}
+
+
+.about-start > p:last-child{
+    background-color: #BEF5F3;
+    border-radius: 20px;
+    margin: 70px 0;
+    padding: 32px;
+    font-size: 20px;
+    font-family: "Manrope";
+}
+
+
+/* about project */
+
+
+.about-project p,
+.about-platform p{
+    margin-bottom: 48px;
+}
+
+
+
+@media(max-width: 1439px){
+    main{
+        flex-direction: column;
+        width: 1010px;
+        padding: 0 20px;
+    }
+
+    aside{
+        margin-bottom: 84px;
+    }
+}
