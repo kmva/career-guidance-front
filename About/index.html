@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>header</header>
+    <header class="main-header">
+        <div class="backdrop"></div>
+        <div class="logo">
+            <img src="../svg/informatio.svg" alt="">
+            <img src="../svg/fond.svg" alt="">
+        </div>
+        <div class="mob-menu__burger"><img src="../svg/burger.svg" alt=""></div>
+        <nav class="main-nav">
+            <div class="mob-menu">
+                <h4>Меню</h4>
+                <div><img src="../svg/cross.svg" alt=""></div>
+            </div>
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="">Главная</a> </li>
+                <li class="main-nav__item about-us"><a href="">О нас</a></li>
+                <li class="main-nav__item"><a href="">Учащимся</a></li>
+                <li class="main-nav__item"><a href="">Родителям</a></li>
+                <li class="main-nav__item"><a href="">Педагогам</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <aside>
             <h4 class="menu-title">Меню</h4>
@@ -24,7 +46,7 @@
                     С чего всё <span>началось? <img class="title-vector" src="./svg/vector.svg" alt=""></span> 
                 </h2>
     
-                <img src="./images/about-start.png" alt="">
+                <img class="section-image" src="./images/about-start.png" alt="">
     
                 <p>Нашей Фаризе как-то в соцсетях написали: <b>«Я в выпускном классе, но не знаю куда поступать. Что делать?»</b></p>
                 <p>На что она ответила:</p>
@@ -64,11 +86,11 @@
                     из самых различных профессий, участвовали в 5 выездных экскурсиях, 
                     примеряли на себя роль юристов в судебных дебатах, работая совместно 
                     со студентами Юридической клиники ЧГУ, обучались техническим и инженерным навыкам. </p>
-                <iframe width="970" height="490" src="https://www.youtube.com/embed/LbNsEuTx6lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/LbNsEuTx6lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Проект "Профориентационная смена "Специалист выпускнику", поддержанный Фондом президентских грантов</p>
                 <iframe width="970" height="490" src="https://www.youtube.com/embed/hHiKVPbQ0DE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Сюжет ЧГТРК "Грозный" о проекте ИН-форматио "Профориентационная компания "Специалист выпускнику"</p>
-                <img src="./images/about-project.png" alt="">
+                <img class="section-image" src="./images/about-project.png" alt="">
             </section>
 
             <section class="about-platform">
@@ -87,7 +109,7 @@
                     полезные статьи и видеоматериалы, и теперь делимся ими, размещая на этом сайте. 
                 </p>
 
-                <img src="./images/about-platform.png" alt="">
+                <img class="section-image"  src="./images/about-platform.png" alt="">
             </section>
             <section class="what-next">
                 <h2 class="what-next__title">
@@ -98,6 +120,46 @@
         </div>
 
     </main>
-    <footer>footer</footer>
+    <footer>
+        <div class="footer">
+            <div class="footer-logos">
+                <div>
+                    <img class="logo-informatio" src="../svg/informatio-footer.svg" alt="">
+                    <img class="logo-fond" src="../svg/fond-footer.svg" alt="">
+                </div>
+                <p>«Профориентационный проект «Специалист выпускнику» при поддержке Фонда президентских грантов</p>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="">Главная</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Педагогам</a></li>
+                <li><a href="">Родителям</a></li>
+                <li><a href="">Учащимся</a></li>
+            </ul>
+            <ul class="contacts">
+                <li class="desktop-contacts">Контакты</li>
+                <li class="desktop-contacts"><a href="">aslan@kcno.ru</a></li>
+
+                <li class="footer-phone">Номер телефоне</li>
+                <li><a href="">+7 (928) 004 17 01</a></li>
+                <li><a href="">+7 (963) 593 35 33</a></li>
+
+                <li class="footer-mail title">Электронный адрес</li>
+                <li class="footer-mail"><a href="">aslan@kcno.ru</a></li>
+            </ul>
+            <div class="address">
+                <h4>Офис</h4>
+                <h4 class="mob-address">Юридический адрес</h4>
+                <p>г. Грозный, пр-т им. В.В. Путина, 30, “ЦУМ”, офис 20</p>
+            </div>
+        </div>
+        <div class="sign">
+            <div class="footer-mob__logo">
+                <img class="logo-informatio" src="../svg/informatio-footer.svg" alt="">
+                <img class="logo-fond" src="../svg/fond-footer.svg" alt="">
+            </div>
+            <p>©2022 IN-Formatio.</p>
+        </div>
+    </footer>
 </body>
 </html>

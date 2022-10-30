@@ -1,0 +1,314 @@
+footer {
+    background-color: #1C242B;
+    min-width: 1440px;
+}
+
+.footer {
+    display: flex;
+    padding: 120px 70px 95px 70px;
+    width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.footer-logos {
+    width: 296px;
+    height: 196px;
+}
+
+.footer-logos>div {
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-logos .logo-informatio {
+    margin-right: 35px;
+}
+
+.footer-logos p {
+    font-family: 'Manrope';
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #F7F7EE;
+}
+
+
+.footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-family: 'Manrope';
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.footer-nav li:first-child a {
+    font-family: "Manrope Bold";
+}
+
+
+.contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts li:first-child {
+    padding-bottom: 16px;
+    color: #fff;
+    font-family: "Manrope Bold";
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 16px;
+    display: inline-block;
+    font-family: 'Manrope Light';
+}
+
+
+.address {
+    width: 161px;
+}
+
+.address h4 {
+    font-family: 'Manrope Bold';
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+}
+
+.address p {
+    margin: 0;
+    font-family: 'Manrope Light';
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+
+
+.footer ul a:hover,
+.footer ul a:active {
+    color: #14BEB6;
+}
+
+
+
+footer .sign p {
+    font-family: 'Manrope Light';
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    text-align: right;
+    margin: auto;
+}
+
+footer .sign {
+    padding: 32px 0;
+    border-top: 1px solid rgba(95, 125, 149, 0.4);
+}
+
+
+.footer-phone,
+.footer-mail,
+.mob-address,
+.footer-mob__logo,
+.mob-menu,
+.mob-menu__burger,
+.backdrop {
+    display: none;
+}
+
+
+
+@media(max-width: 1439px) {
+    footer {
+        min-width: 1024px;
+    }
+
+    .footer {
+        padding: 120px 20px 105px 20px;
+        width: 1024px;
+    }
+
+    .footer-logos {
+        width: 235px;
+        height: 51px;
+    }
+
+    .footer-logos p {
+        font-size: 16px;
+    }
+
+    footer .sign {
+        padding: 32px 20px;
+    }
+}
+
+
+
+@media(max-width: 1023px) {
+    footer {
+        min-width: 768px;
+    }
+
+    .footer {
+        padding: 120px 20px 105px 20px;
+        width: 768px;
+    }
+
+    .footer-logos {
+        width: 206px;
+        height: 49px;
+    }
+
+
+    .footer-logos .logo-informatio {
+        width: 49px;
+    }
+
+    .footer-logos .logo-fond {
+        width: 124px;
+    }
+
+    .footer-logos p {
+        font-size: 15px;
+    }
+
+    .footer-nav a {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .contacts li:first-child {
+        font-size: 15px;
+    }
+
+    .contacts a {
+        font-size: 15px;
+    }
+
+
+    .address {
+        width: 153px;
+    }
+
+    .address h4 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .address p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+    footer .sign {
+        padding: 32px 20px;
+    }
+}
+
+
+@media(max-width: 767px) {
+    /* footer  */
+
+    footer {
+        min-width: 375px;
+    }
+
+    .footer {
+        padding: 50px 20px 34px 20px;
+        width: 375px;
+        flex-direction: column;
+    }
+
+    .footer-logos,
+    .footer-nav {
+        display: none;
+    }
+
+    .desktop-contacts {
+        display: none;
+    }
+
+    .address h4:first-child {
+        display: none;
+    }
+
+    .footer-phone,
+    .footer-mail,
+    .mob-address,
+    .footer-mob__logo {
+        display: block;
+    }
+
+    .footer-phone,
+    .contacts .title,
+    .mob-address {
+        font-size: 16px;
+        font-family: "Manrope SemiBold";
+        color: white;
+        margin-bottom: 8px;
+    }
+
+
+    .contacts a {
+        font-size: 12px;
+    }
+
+
+    .address p {
+        font-size: 12px;
+        line-height: 20px;
+        width: 335px;
+    }
+
+
+    .footer .title {
+        margin-top: 24px;
+    }
+
+    .address h4 {
+        margin: 24px 0 16px 0;
+    }
+
+
+    footer .sign {
+        padding: 23px 20px;
+    }
+
+    footer .sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .sign p {
+        font-size: 10px;
+        margin: 0 0 0 122px;
+    }
+
+    .footer-mob__logo img {
+        height: 30px;
+    }
+}

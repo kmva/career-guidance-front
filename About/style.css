@@ -37,9 +37,13 @@ body {
     margin: 0;
 }
 
+.about-us a{
+    color: #14BEB6;
+}
+
 
 main {
-    width: 1342px;
+    width: 1440px;
     margin: auto;
     padding: 0 70px;
     margin-top: 80px;
@@ -101,11 +105,11 @@ section p {
 }
 
 
-section h2 span{
+section h2 span {
     position: relative;
 }
 
-.title-vector{
+.title-vector {
     position: absolute;
     bottom: 5px;
     right: -40px;
@@ -116,33 +120,32 @@ section h2 span{
 
 /* about start */
 
-.about-start{
+.about-start {
     /* margin-bottom: 240px; */
 }
 
-.about-start p:first-child{
+.about-start p:first-child {
     margin: 0 0 24px 0;
 }
 
 
-.about-start img{
+.about-start img {
     margin-bottom: 48px;
 }
 
 
-.about-start ul{
+.about-start ul {
     /* margin: 16px 0 31px 0; */
     padding-left: 32px;
     list-style: url("./svg/list-icon.svg");
 }
 
 
-.about-start > p:last-child{
+.about-start>p:last-child {
     background-color: #BEF5F3;
     border-radius: 20px;
     margin: 70px 0;
     padding: 32px;
-    font-size: 20px;
     font-family: "Manrope";
 }
 
@@ -151,20 +154,105 @@ section h2 span{
 
 
 .about-project p,
-.about-platform p{
+.about-platform p {
     margin-bottom: 48px;
 }
 
+iframe{
+    width:970px;
+    height: 490px;
+}
 
-
-@media(max-width: 1439px){
-    main{
+@media(max-width: 1439px) {
+    main {
         flex-direction: column;
         width: 1010px;
         padding: 0 20px;
     }
 
-    aside{
+    aside {
         margin-bottom: 84px;
+    }
+}
+
+
+@media(max-width: 1023px) {
+    /* общие стили */
+
+    main {
+        width: 768px;
+    }
+
+    section {
+        width: 728px;
+        margin-bottom: 176px;
+    }
+
+
+    section h2 {
+        font-size: 48px;
+    }
+
+    section p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .title-vector {
+        bottom: 0px;
+    }
+
+    .section-image{
+        width: 728px;
+    }
+
+    iframe{
+        width: 729px;
+        height: 364px;
+    }
+}
+
+
+
+@media(max-width: 767px) {
+    /* общие стили */
+
+    main {
+        width: 375px;
+    }
+
+    section {
+        width: 335px;
+        margin-bottom: 120px;
+    }
+
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .title-vector {
+        width: 172.98px;
+        bottom: 0px;
+        right: -20px;
+    }
+
+    .section-image{
+        width: 335px;
+    }
+
+    iframe{
+        width: 335px;
+        height: 166px;
+    }
+
+
+    .about-start ul {
+        list-style: url("./svg/list-min-icon.svg");
     }
 }
