@@ -131,10 +131,7 @@ footer .sign {
 .footer-phone,
 .footer-mail,
 .mob-address,
-.footer-mob__logo,
-.mob-menu,
-.mob-menu__burger,
-.backdrop {
+.footer-mob__logo {
     display: none;
 }
 

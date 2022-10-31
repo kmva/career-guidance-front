@@ -40,6 +40,88 @@
 
 
 
+.nav-item__active a{
+    color: #14BEB6;
+}
+
+
+
+/* стили гамбургера */
+.burger{
+    position: relative;
+    z-index: 2001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s .5s, opacity .5s;
+}
+
+.burger_active{
+    transition: transform .5s .5s, opacity .5s;
+    background-color: rgb(114, 114, 114);
+    border-radius: 50%;
+}
+
+.menu-btn{
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -12.5px;
+    width: 25px;
+    height: 4px;
+    background: #111;
+}
+
+.menu-btn span::before,
+.menu-btn span::after{
+    content: '';
+    display: block;
+    transition: 0.5s;
+}
+
+.menu-btn span::before{
+    transform: translateY(-7.2px);
+}
+
+.menu-btn span::after{
+    transform: translateY(5px);
+}
+
+.menu-btn_active span{
+    height: 0;
+} 
+
+.menu-btn_active span:before{
+    transform: rotate(45deg);
+}
+
+.menu-btn_active span:after{
+    transform: rotate(-45deg);
+}
+
+
+
+.burger{
+    display: none;
+}
+
+
+
+
+
+
+
+
 @media(max-width: 1439px) {
 
     /* header */
@@ -71,7 +153,10 @@
     }
 }
 
-
+.mob-menu,
+.backdrop{
+    display: none;
+}
 
 @media(max-width: 767px) {
     .main-header {
@@ -94,12 +179,16 @@
         z-index: 99;
     }
 
-    .mob-menu__burger{
+    .backdrop__active{
         display: block;
     }
 
+    .burger{
+        display: flex;
+    }
+
     .main-nav {
-        position: fixed;
+        position: absolute;
         display: none;
         width: 100vw;
         height: 667px;
@@ -108,6 +197,10 @@
         background-color: #fff;
         z-index: 100;
         padding: 32px 23px 32px 32px;
+    }
+
+    .main-nav__active{
+        display: block;
     }
 
     .main-nav__items{

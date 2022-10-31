@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="style.css">
@@ -13,19 +14,22 @@
     <header class="main-header">
         <div class="backdrop"></div>
         <div class="logo">
-            <img src="../svg/informatio.svg" alt="">
-            <img src="../svg/fond.svg" alt="">
+            <img src="../images/icons/informatio.svg" alt="">
+            <img src="../images/icons/fond.svg" alt="">
         </div>
-        <div class="mob-menu__burger"><img src="../svg/burger.svg" alt=""></div>
+        <div class="burger">
+            <a href="#" class="menu-btn">
+                <span></span>
+            </a>
+        </div>
         <nav class="main-nav">
             <div class="mob-menu">
                 <h4>Меню</h4>
-                <div><img src="../svg/cross.svg" alt=""></div>
             </div>
             <ul class="main-nav__items">
-                <li class="main-nav__item"><a href="">Главная</a> </li>
-                <li class="main-nav__item about-us"><a href="">О нас</a></li>
-                <li class="main-nav__item"><a href="">Учащимся</a></li>
+                <li class="main-nav__item"><a href="../Main/index.html">Главная</a> </li>
+                <li class="main-nav__item nav-item__active"><a href="../About/index.html">О нас</a></li>
+                <li class="main-nav__item"><a href="../Students/index.html">Учащимся</a></li>
                 <li class="main-nav__item"><a href="">Родителям</a></li>
                 <li class="main-nav__item"><a href="">Педагогам</a></li>
             </ul>
@@ -43,10 +47,10 @@
         <div>
             <section class="about-start">
                 <h2 class="about-start__title">
-                    С чего всё <span>началось? <img class="title-vector" src="./svg/vector.svg" alt=""></span> 
+                    С чего всё <span>началось? <img class="title-vector" src="../images/icons/about-vector.svg" alt=""></span> 
                 </h2>
     
-                <img class="section-image" src="./images/about-start.png" alt="">
+                <img class="section-image" src="../images/about-start.png" alt="">
     
                 <p>Нашей Фаризе как-то в соцсетях написали: <b>«Я в выпускном классе, но не знаю куда поступать. Что делать?»</b></p>
                 <p>На что она ответила:</p>
@@ -80,7 +84,7 @@
             </section>
     
             <section class="about-project">
-                <h2 class="about-project__title">О проектной <span>смене<img class="title-vector" src="./svg/vector.svg" alt=""></span></h2>
+                <h2 class="about-project__title">О проектной <span>смене<img class="title-vector" src="../images/icons/about-vector.svg" alt=""></span></h2>
                 <p>Первой частью проекта стала проектная смена в Центре одаренных детей «Ахмат», 
                     где 55 учащихся на протяжении 3-х недель общались с более 60-тью специалистами 
                     из самых различных профессий, участвовали в 5 выездных экскурсиях, 
@@ -90,12 +94,12 @@
                 <p>Проект "Профориентационная смена "Специалист выпускнику", поддержанный Фондом президентских грантов</p>
                 <iframe width="970" height="490" src="https://www.youtube.com/embed/hHiKVPbQ0DE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Сюжет ЧГТРК "Грозный" о проекте ИН-форматио "Профориентационная компания "Специалист выпускнику"</p>
-                <img class="section-image" src="./images/about-project.png" alt="">
+                <img class="section-image" src="../2. images/about-project.png" alt="">
             </section>
 
             <section class="about-platform">
                 <h2 class="about-platform__title">
-                    Идея с <span>платформой<img class="title-vector" src="./svg/vector.svg" alt=""></span> 
+                    Идея с <span>платформой<img class="title-vector" src="../images/icons/about-vector.svg" alt=""></span> 
                 </h2>
                 <p>Создание платформы вошло во вторую часть реализации проекта 
                     «Специалист выпускнику». Мы понимали, что на смену попадут только единицы,
@@ -109,11 +113,11 @@
                     полезные статьи и видеоматериалы, и теперь делимся ими, размещая на этом сайте. 
                 </p>
 
-                <img class="section-image"  src="./images/about-platform.png" alt="">
+                <img class="section-image"  src="../images/about-platform.png" alt="">
             </section>
             <section class="what-next">
                 <h2 class="what-next__title">
-                    А что <span>дальше?<img class="title-vector" src="./svg/vector.svg" alt=""></span> 
+                    А что <span>дальше?<img class="title-vector" src="../images/icons/about-vector.svg" alt=""></span> 
                 </h2>
                 <p>Это только первые шаги. Мы очень надеемся, что наш энтузиазм поможет развить эту идею и дальше.</p>
             </section>
@@ -124,28 +128,27 @@
         <div class="footer">
             <div class="footer-logos">
                 <div>
-                    <img class="logo-informatio" src="../svg/informatio-footer.svg" alt="">
-                    <img class="logo-fond" src="../svg/fond-footer.svg" alt="">
+                    <img class="logo-informatio" src="../images/icons/informatio-white.svg" alt="">
+                    <img class="logo-fond" src="../images/icons/fond-white.svg" alt="">
                 </div>
                 <p>«Профориентационный проект «Специалист выпускнику» при поддержке Фонда президентских грантов</p>
             </div>
             <ul class="footer-nav">
-                <li><a href="">Главная</a></li>
-                <li><a href="">О нас</a></li>
+                <li><a href="../Main/index.html">Главная</a></li>
+                <li><a href="../About/index.html">О нас</a></li>
                 <li><a href="">Педагогам</a></li>
                 <li><a href="">Родителям</a></li>
-                <li><a href="">Учащимся</a></li>
+                <li><a href="../Students/index.html">Учащимся</a></li>
             </ul>
             <ul class="contacts">
                 <li class="desktop-contacts">Контакты</li>
-                <li class="desktop-contacts"><a href="">aslan@kcno.ru</a></li>
+                <li class="desktop-contacts"><a href="">in-formatio@mail.ru</a></li>
 
-                <li class="footer-phone">Номер телефоне</li>
-                <li><a href="">+7 (928) 004 17 01</a></li>
-                <li><a href="">+7 (963) 593 35 33</a></li>
+                <li class="footer-phone">Номер телефона</li>
+                <li><a href="">+7 (928) 004 29 86</a></li>
 
                 <li class="footer-mail title">Электронный адрес</li>
-                <li class="footer-mail"><a href="">aslan@kcno.ru</a></li>
+                <li class="footer-mail"><a href="">in-formatio@mail.ru</a></li>
             </ul>
             <div class="address">
                 <h4>Офис</h4>
@@ -155,11 +158,12 @@
         </div>
         <div class="sign">
             <div class="footer-mob__logo">
-                <img class="logo-informatio" src="../svg/informatio-footer.svg" alt="">
-                <img class="logo-fond" src="../svg/fond-footer.svg" alt="">
+                <img class="logo-informatio" src="../images/icons/informatio-white.svg" alt="">
+                <img class="logo-fond" src="../images/icons/fond-white.svg" alt="">
             </div>
             <p>©2022 IN-Formatio.</p>
         </div>
     </footer>
+    <script src="../scripts.js"></script>
 </body>
 </html>

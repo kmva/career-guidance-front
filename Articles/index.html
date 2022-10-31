@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Статьи</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <header>header</header>
+    <header class="main-header">
+        <div class="backdrop"></div>
+        <div class="logo">
+            <img src="../images/icons/informatio.svg" alt="">
+            <img src="../images/icons/fond.svg" alt="">
+        </div>
+        <div class="burger">
+            <a href="#" class="menu-btn">
+                <span></span>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <div class="mob-menu">
+                <h4>Меню</h4>
+            </div>
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="../Main/index.html">Главная</a> </li>
+                <li class="main-nav__item"><a href="../About/index.html">О нас</a></li>
+                <li class="main-nav__item"><a href="../Students/index.html">Учащимся</a></li>
+                <li class="main-nav__item"><a href="">Родителям</a></li>
+                <li class="main-nav__item"><a href="">Педагогам</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="article-section">
             <div class="Breadcrumbs">
@@ -17,13 +42,17 @@
                 <p class="articles-date">5 окт 2022</p>
             </div>
             <div class="article">
-                <h1 class="article-title">Конкурс «Лучший лектор» 2021 от Российского общества «Знание»</h1>
+                <h1 class="article-title"><span>
+                    Конкурс «Лучший лектор» 2021 от Российского общества «Знание»
+                    <img src="../images/icons/articles-vector.svg" alt="">
+                </span></h1>
                 <img src="../images/articles/article1.png" alt="" class="article-img">
                 <p class="article-anons">Цель конкурса – формирование интереса к разговорной форме изложения учебного, научного или научно-популярного материала, развитие и популяризация лекторского искусства в российском обществе и развитие просветительской деятельности в России.</p>
 
                 <div class="article-text">
                     <h2>Задачи Конкурса</h2>
                     <p>Как и в прошлом году, центральной частью проекта является профессиональная программа переподготовки «Школа лидеров общего образования», для обучения по которой участникам необходимо будет пройти конкурсный отбор.</p>
+                    <p>Конкурс состоит из нескольких этапов: заявочный, основной (отборочный) и финальный, и проводится в следующие сроки:</p>
                     <ul>
                         <li>До 24 ноября 2021 года – прием пакета заявочных документов и до 01 декабря 2021 года прием эссе и решений кейса (заявочный этап);</li>
                         <li>До 13 декабря 2021 года – экспертиза (оценка) поступивших заявок, эссе и решений кейса (основной этап);</li>
@@ -31,6 +60,8 @@
                         <li>30 декабря 2021 года торжественное объявление финалистов Конкурса.</li>
                     </ul>
                     <p>В этом году для попадания в финал проекта участникам необходимо в качестве конкурсных заданий написать эссе на темы «Лидерство в образовании» и «Я после проекта «Лидеры в образовании», решить один из предложенных организаторами кейсов и пройти собеседование.</p>
+                    <p>С остальными подробностями потенциальные участники могут ознакомиться в Положении о конкурсном отборе слушателей для обучения по профессиональной программе переподготовки «Школа лидеров общего образования», утвержденном приказом Министерства образования и науки Чеченской Республики от 09.11.2021 г. №1429-п.</p>
+                    <p>Автономная некоммерческая организация независимый консалтинговый центр «ИН- форматио» выступает партнером данного проекта.</p>
                 </div>
 
                 <div class="other">
@@ -62,6 +93,46 @@
             </ul>
         </aside>
     </main>
-    <footer>footer</footer>
+    <footer>
+        <div class="footer">
+            <div class="footer-logos">
+                <div>
+                    <img class="logo-informatio" src="../images/icons/informatio-white.svg" alt="">
+                    <img class="logo-fond" src="../images/icons/fond-white.svg" alt="">
+                </div>
+                <p>«Профориентационный проект «Специалист выпускнику» при поддержке Фонда президентских грантов</p>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="../Main/index.html">Главная</a></li>
+                <li><a href="../About/index.html">О нас</a></li>
+                <li><a href="">Педагогам</a></li>
+                <li><a href="">Родителям</a></li>
+                <li><a href="../Students/index.html">Учащимся</a></li>
+            </ul>
+            <ul class="contacts">
+                <li class="desktop-contacts">Контакты</li>
+                <li class="desktop-contacts"><a href="">in-formatio@mail.ru</a></li>
+
+                <li class="footer-phone">Номер телефона</li>
+                <li><a href="">+7 (928) 004 29 86</a></li>
+
+                <li class="footer-mail title">Электронный адрес</li>
+                <li class="footer-mail"><a href="">in-formatio@mail.ru</a></li>
+            </ul>
+            <div class="address">
+                <h4>Офис</h4>
+                <h4 class="mob-address">Юридический адрес</h4>
+                <p>г. Грозный, пр-т им. В.В. Путина, 30, “ЦУМ”, офис 20</p>
+            </div>
+        </div>
+        <div class="sign">
+            <div class="footer-mob__logo">
+                <img class="logo-informatio" src="../images/icons/informatio-white.svg" alt="">
+                <img class="logo-fond" src="../images/icons/fond-white.svg" alt="">
+            </div>
+            <p>©2022 IN-Formatio.</p>
+        </div>
+    </footer>
+    <script src="../scripts.js"></script>
 </body>
 </html>

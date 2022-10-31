@@ -1,0 +1,328 @@
+main {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+aside .menu-title {
+    font-size: 24px;
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+    margin: 0;
+}
+
+aside {
+    width: 195px;
+}
+
+aside .menu-items {
+    margin: 32px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+aside .menu-item a {
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+}
+
+aside .menu-item {
+    margin-bottom: 16px;
+}
+
+/* общие стили */
+
+section {
+    width: 859px;
+    margin-bottom: 240px;
+
+}
+
+
+section h2 {
+    font-size: 48px;
+    margin: 0 0 70px 0;
+    position: relative;
+}
+
+section p {
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    margin: 0 0 20px 0;
+}
+
+
+section h2 span {
+    position: relative;
+}
+
+.title-vector {
+    position: absolute;
+    bottom: 0px;
+    right: -10%;
+    z-index: -1;
+}
+
+.professions{
+    margin-left: 37px;
+}
+
+.profession-items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profession-item__title{
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    margin: 0 0 70px 0;
+}
+
+.profession-item__title span{
+    position: relative;
+}
+
+.profession-item__title img{
+    position: absolute;
+    width: 120%;
+    bottom: 4px;
+    left: 0;
+    z-index: -1;
+}
+
+.profession-list{
+    list-style: none;
+    margin: 0 0 120px 0;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: "Manrope";
+}
+
+.profession-list header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profession-list > li{
+    padding: 24px 27px;
+    border-bottom: 1px solid #000;
+}
+
+.profession-list > li:last-child{
+    border-bottom: none;
+}
+
+.profession-list h4{
+    font-size: 22px;
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+    color: #010101;
+    margin: 0;
+}
+
+
+.profession-list > div{
+    padding-bottom: 30px;
+}
+
+.profession-list p{
+    margin: 0;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.profession-description__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profession-description a{
+    color: #007DFF;
+    text-decoration: none;
+}
+
+.profession-description__list > li{
+    margin-top: 32px;
+}
+
+.profession-description__list h5{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 30px 0 16px 0;
+}
+
+.profession-description__list ul{
+    font-size: 16px;
+    line-height: 24px;
+    list-style: disc;
+    padding-left: 38px;
+}
+
+.profession-description__list li{
+    margin: 4px;
+}
+
+
+.profession-description{
+    font-size: 16px;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+
+.button-open{
+    width: 29px;
+    height: 29px;
+    border: 1px solid #14BEB6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.button-open div{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    transition: transform 1s;
+}
+
+
+
+.button-open span{
+    position: absolute;
+    background-color: #14BEB6;
+    width: 10px;
+    height: 1px;
+    border-radius: 5px;
+    bottom: 50%;
+}
+
+.button-open span:first-child{
+    transform: rotate(90deg);
+
+}
+
+.button-open__active{
+    background-color: #14BEB6;
+}
+
+.button-open__active span{
+    background-color: #fff;
+}
+
+.button-open__active div{
+    transform: rotate(45deg);
+}
+
+
+
+@media(max-width: 1439px) {
+    main {
+        flex-direction: column;
+        width: 1024px;
+        padding: 0 20px;
+    }
+
+    aside {
+        margin-bottom: 84px;
+    }
+
+    .professions{
+        margin: 0;
+    }
+}
+
+
+@media(max-width: 1023px) {
+    main {
+        flex-direction: column;
+        width: 768px;
+        padding: 0 20px;
+    }
+
+    .professions{
+        width: 728px;
+        margin: 0;
+    }
+
+    .title-vector{
+        width: 320px;
+    }
+
+    .professions-title{
+        font-size: 48px;
+        line-height: 66px;
+    }
+}
+
+
+@media(max-width: 768px) {
+    main {
+        width: 375px;
+    }
+
+    .title-vector{
+        width: 142px;
+        /* right: ; */
+    }
+
+    .professions{
+        width: 335px;
+        margin: 0;
+    }
+
+    .professions-title{
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .profession-item__title{
+        font-size: 20px;
+    }
+
+    .profession-list{
+        font-size: 12px;
+    }
+
+    .profession-list h4{
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .profession-list p{
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .profession-description__list h5{
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+
+    .profession-description__active{
+        max-height: 2000px;
+    }
+
+    .profession-description__list ul{
+        font-size: 12px;
+        line-height: 17px;
+        padding-left: 27px;
+    }
+}
+

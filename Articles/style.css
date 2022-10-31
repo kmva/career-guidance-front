@@ -1,47 +1,4 @@
-@font-face {
-    font-family: "Manrope Light";
-    src: url("../fonts/Manrope-Light.ttf");
-}
-
-@font-face {
-    font-family: "Manrope";
-    src: url("../fonts/Manrope-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Manrope Medium";
-    src: url("../fonts/Manrope-Medium.ttf");
-}
-
-@font-face {
-    font-family: "Manrope SemiBold";
-    src: url("../fonts/Manrope-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: "Manrope Bold";
-    src: url("../fonts/Manrope-Bold.ttf");
-}
-
-@font-face {
-    font-family: "Manrope ExtraBold";
-    src: url("../fonts/Manrope-ExtraBold.ttf");
-}
-
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0;
-}
-
-
 main{
-    width: 1440px;
-    margin: auto;
-    padding: 0 70px;
     margin-top: 48px;
     display: flex;
     justify-content: space-between;
@@ -58,7 +15,7 @@ main{
 }
 
 .articles-hashtag{
-    font-family: 'Manrope Medium';
+    font-family: "Manrope Medium", "Arial", sans-serif;
     font-size: 20px;
     letter-spacing: -0.02em;
     color: #14BEB6;
@@ -66,7 +23,7 @@ main{
 }
 
 .articles-date{
-    font-family: 'Manrope Medium';
+    font-family: "Manrope Medium", "Arial", sans-serif;
     font-size: 20px;
     letter-spacing: -0.02em;
     margin: 0;
@@ -75,10 +32,19 @@ main{
 
 
 .article-title{
-    font-family: 'Manrope Bold';
-    font-size: 64px;
-    letter-spacing: -0.02em;
     margin: 45px 0 24px 0;
+    padding-right: 40px;
+}
+
+.article-title span{
+    position: relative;
+}
+
+.article-title img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .article-img{
@@ -94,24 +60,22 @@ main{
     margin: 70px 0;
     padding: 32px;
     font-size: 20px;
-    font-family: "Manrope";
 }
 
 
 .article-text{
     font-size: 20px;
-    font-family: "Manrope";
 }
 
 .article-text p{
     margin: 0;
+    margin-bottom: 32px;
 }
 
 
 .article-text h2,
 .article-text h1{
     font-size: 40px;
-    font-family: "Manrope Bold";
 }
 
 
@@ -127,13 +91,13 @@ main{
 .other ul{
     margin: 16px 0 31px 0;
     padding-left: 60px;
-    list-style: url("./svg/list-icon.svg");
+    list-style: url("../images/icons/list-icon.svg");
 }
 
 .article a{
     text-decoration: none;
     color: #007DFF;
-    font-family: "Manrope";
+    font-family: "Manrope", "Arial", sans-serif;
 }
 
 
@@ -146,7 +110,7 @@ main{
 
 .other h3{
     font-size: 20px;
-    font-family: "Manrope SemiBold";
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
     margin: 0;
 }
 
@@ -183,8 +147,9 @@ aside .articles-title{
 }
 
 aside .articles-title a{
-    font-family: 'Manrope SemiBold';
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
     font-size: 14px;
+    line-height: 19px;
     letter-spacing: -0.02em;
     display: inline-block;
     margin: 10px 7px;
@@ -203,6 +168,7 @@ aside .articles-item img{
 aside .articles-item p{
     margin: 0 7px;
     font-size: 12px;
+    line-height: 16px;
     color: #81859C;
 }
 
@@ -215,7 +181,128 @@ aside .articles-item p{
     }
 
     main{
-        width: 1024px;
         justify-content: center;
+    }
+}
+
+
+@media(max-width: 1023px) {
+    main {
+        margin-top: 24px;
+        padding: 0 20px;
+    }
+
+
+    .article-section {
+        width: 768px;
+    }
+
+    .articles-hashtag,
+    .articles-date {
+        font-size: 14px;
+    }
+
+    .article-title {
+        margin: 24px 0 55px 0;
+        font-size: 36px;
+    }
+
+    .article-title img{
+        width: 213px;
+    }
+
+    .article-img {
+        width: 729px;
+        height: 415px;
+    }
+
+    .article-anons {
+        font-size: 18px;
+        margin: 48px 0;
+    }
+
+    .article-text {
+        font-size: 18px;
+    }
+
+    .article-text h2,
+    .article-text h1 {
+        font-size: 36px;
+    }
+
+    .article-text h3 {
+        font-size: 26px;
+    }
+
+    .article-text h4 {
+        font-size: 21px;
+    }
+}
+
+
+@media(max-width: 767px) {
+    main {
+        margin-top: 14px
+    }
+
+    .article-section {
+        width: 375px;
+    }
+
+    .articles-hashtag,
+    .articles-date {
+        font-size: 11px;
+    }
+
+    .article-title {
+        margin: 32px 0 35px 0;
+        font-size: 24px;
+    }
+
+    .article-title img{
+        width: 142px;
+    }
+
+    .article-img {
+        width: 335px;
+        height: 158px;
+        border-radius: 15px;
+    }
+
+    .article-anons {
+        font-size: 14px;
+        margin: 32px 0;
+        padding: 20px 13px;
+        border-radius: 10px;
+    }
+
+
+    .article-text {
+        font-size: 14px;
+    }
+
+
+    .article-text h2,
+    .article-text h1 {
+        font-size: 20px;
+    }
+
+    .article-text h3 {
+        font-size: 18px;
+    }
+
+    .article-text h4 {
+        font-size: 16px;
+    }
+
+    .other {
+        padding: 30px 20px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    .article-text ul,
+    .other ul{
+        list-style: url("../images/icons/list-min-icon.svg");
     }
 }
