@@ -1,0 +1,229 @@
+main {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+aside .menu-title {
+    font-size: 24px;
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+    margin: 0;
+}
+
+aside {
+    width: 195px;
+}
+
+aside .menu-items {
+    margin: 32px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+aside .menu-item a {
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+}
+
+aside .menu-item {
+    margin-bottom: 16px;
+}
+
+
+/* общие стили */
+
+section {
+    width: 970px;
+    margin-bottom: 240px;
+
+}
+
+
+section h2 {
+    font-size: 64px;
+    margin: 0 0 70px 0;
+    position: relative;
+}
+
+section p {
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    margin: 0 0 20px 0;
+}
+
+
+section h2 span {
+    position: relative;
+}
+
+.aboutInformatio {
+    margin-left: 37px;
+}
+
+.aboutInformatio>img {
+    width: 970px;
+    margin-bottom: 32px;
+}
+
+.title-vector {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+.aboutInformatio-list,
+.aboutInformation-text p {
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.aboutInformatio-list {
+    list-style: url('../images/icons/list-icon.svg');
+    padding-left: 24px;
+    margin: 0;
+}
+
+.aboutInformatio-list li {
+    margin-bottom: 16px;
+}
+
+.inFormatio-projects{
+    padding: 40px 53px 30px 53px;
+    border-radius: 20px;
+    background-color: #BEF5F3;
+    margin-top: 48px;
+}
+
+.inFormatio-projects h3{
+    font-size: 20px;
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+    margin: 0 0 24px 0;
+}
+
+.project-list{
+    margin: 0;
+    list-style: url('../images/icons/list-icon.svg');
+    padding-left: 24px;
+    display: grid;
+    grid-template-columns: 308px 308px;
+    gap: 0 100px;
+}
+
+.project-list li{
+    margin-bottom: 16px;
+}
+
+.project-list a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #007DFF;
+}
+
+
+@media(max-width: 1439px) {
+    main {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    aside {
+        margin-bottom: 84px;
+    }
+
+    .aboutInformatio {
+        width: 970px;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1023px) {
+    main {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    section h2 {
+        font-size: 48px;
+    }
+
+    .aboutInformatio {
+        width: 728px;
+    }
+
+    .aboutInformatio>img {
+        width: 728px;
+    }
+
+    .title-vector {
+        width: 282.09px;
+    }
+
+    
+    .aboutInformatio-list,
+    .aboutInformation-text p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .project-list{
+        gap: 0;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .aboutInformatio {
+        width: 335px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .title-vector {
+        width: 132.82px;
+    }
+
+    .aboutInformatio>img {
+        width: 335px;
+    }
+
+    .aboutInformatio-list,
+    .aboutInformation-text p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .aboutInformatio-list {
+        list-style: url('../images/icons/list-min-icon.svg');
+    }
+
+    .inFormatio-projects{
+        margin-top: 70px;
+    }
+
+    .project-list{
+        grid-template-columns: 1fr;
+        list-style: url('../images/icons/list-min-icon.svg');
+    }
+
+    .project-list a{
+        font-size: 14px;
+    }
+
+    .project-list li{
+        margin-bottom: 19px
+    }
+
+    .inFormatio-projects{
+        padding: 40px 0 21px 24px;
+    }
+}
