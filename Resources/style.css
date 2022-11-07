@@ -1,0 +1,171 @@
+main {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+aside .menu-title {
+    font-size: 24px;
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+    margin: 0;
+}
+
+aside {
+    width: 195px;
+}
+
+aside .menu-items {
+    margin: 32px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+aside .menu-item a {
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Manrope SemiBold", "Arial", sans-serif;
+}
+
+aside .menu-item {
+    margin-bottom: 16px;
+}
+
+
+/* общие стили */
+
+section {
+    width: 970px;
+    margin-bottom: 240px;
+
+}
+
+
+section h2 {
+    font-size: 64px;
+    margin: 0 0 70px 0;
+    position: relative;
+}
+
+section p {
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    margin: 0 0 20px 0;
+}
+
+
+section h2 span {
+    position: relative;
+}
+
+.resources{
+    margin-left: 37px;
+}
+
+.resources-img{
+    width: 970px;
+    margin-bottom: 32px;
+}
+
+.title-vector {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+.resources-item{
+    background-color: #BEF5F3;
+    border-radius: 10px;
+    margin: 16px 0;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+.resources-item a{
+    color: #000;
+    text-decoration: none
+}
+
+
+@media(max-width: 1439px) {
+    main {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .resources-img{
+        width: 970px;
+    }
+
+    aside {
+        margin-bottom: 84px;
+    }
+
+    section h2{
+        font-size: 48px;
+    }
+
+    .title-vector{
+        width: 466.05px;
+    }
+    .resources{
+        width: 970px;
+        margin-left: 0;
+    }
+
+    .resources-item a{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1023px) {
+    main {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .resources{
+        width: 728px;
+    }
+
+    .resources-img{
+        width: 728px;
+    }
+
+    .resources-item a{
+        font-size: 18px;
+    }
+
+    .resources-item{
+        padding: 20px;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .resources {
+        width: 335px;
+    }
+
+    section h2{
+        font-size: 24px;
+    }
+
+    .title-vector{
+        width: 242.82px;
+    }
+
+    .resources-img{
+        width: 335px;
+    }
+
+    .resources-item a{
+        font-size: 14px;
+    }
+}
