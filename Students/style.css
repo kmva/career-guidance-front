@@ -116,6 +116,7 @@ section h2 span {
 .profession-list > li{
     padding: 24px 27px;
     border-bottom: 1px solid #000;
+    margin: 0;
 }
 
 .profession-list > li:last-child{
@@ -148,6 +149,7 @@ section h2 span {
 }
 
 .profession-description a{
+    font-size: 16px;
     color: #007DFF;
     text-decoration: none;
 }
@@ -156,20 +158,20 @@ section h2 span {
     margin-top: 32px;
 }
 
-.profession-description__list h5{
+h5{
     font-size: 16px;
     line-height: 24px;
     margin: 30px 0 16px 0;
 }
 
-.profession-description__list ul{
+ul{
     font-size: 16px;
     line-height: 24px;
     list-style: disc;
     padding-left: 38px;
 }
 
-.profession-description__list li{
+li{
     margin: 4px;
 }
 
@@ -226,7 +228,7 @@ section h2 span {
 }
 
 .button-open__active div{
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 
@@ -309,7 +311,11 @@ section h2 span {
         line-height: 17px;
     }
 
-    .profession-description__list h5{
+    .profession-description a{
+        font-size: 12px;
+    }
+
+    h5{
         font-size: 12px;
         line-height: 17px;
     }
@@ -319,7 +325,7 @@ section h2 span {
         max-height: 2000px;
     }
 
-    .profession-description__list ul{
+    ul{
         font-size: 12px;
         line-height: 17px;
         padding-left: 27px;

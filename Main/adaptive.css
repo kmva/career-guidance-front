@@ -689,6 +689,10 @@
         bottom: -4px;
     }
 
+    .articles-last{
+        margin: 32px 0;
+    }
+
     .articles-last img {
         width: 335px;
         height: 158px;
@@ -745,6 +749,10 @@
         bottom: -8px;
     }
 
+    .dashboard-items{
+        padding: 32px 0 0 0;
+    }
+
     .dashboard-item {
         width: 321px;
         position: relative;
@@ -781,6 +789,7 @@
     }
 
     .partners-items {
+        padding: 32px 0 0 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
