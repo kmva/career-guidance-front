@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профориентация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../footer.css">
@@ -26,15 +27,49 @@
             </a>
         </div>
         <nav class="main-nav">
-            <div class="mob-menu">
+            <!-- <div class="mob-menu">
                 <h4>Меню</h4>
-            </div>
+            </div> -->
             <ul class="main-nav__items">
                 <li class="main-nav__item nav-item__active"><a href="../Main/index.html">Главная</a> </li>
-                <li class="main-nav__item"><a href="../About/index.html">О нас</a></li>
-                <li class="main-nav__item"><a href="../Students/index.html">Учащимся</a></li>
+                <li class="main-nav__item nav-item__submenu">
+                    <a href="#">О нас <span class="item-triangle"><i class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="submenu">
+                        <div class="submenu-inner">
+                            <ul>
+                                <li><a href="../About/index.html">Об ИН-форматио </a></li>
+                                <li><a href="">О проекте «Специалист выпускнику»</a></li>
+                            </ul>
+                            <div class="triangle"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-nav__item nav-item__submenu">
+                    <a href="#">Учащимся <span class="item-triangle"><i class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="submenu">
+                        <div class="submenu-inner">
+                            <ul>
+                                <li><a href="../Students/index.html">Информация об актуальных профессиях в ЧР</a></li>
+                                <li><a href="">Информация о ВУЗах</a></li>
+                                <li><a href="">Полезные ресурсы</a></li>
+                            </ul>
+                            <div class="triangle"></div>
+                        </div>
+                    </div>
+                </li>
                 <li class="main-nav__item"><a href="">Родителям</a></li>
-                <li class="main-nav__item"><a href="">Педагогам</a></li>
+                <li class="main-nav__item nav-item__submenu">
+                    <a href="#">Педагогам <span class="item-triangle"><i class="fa-solid fa-caret-down"></i></span></a>
+                    <div class="submenu">
+                        <div class="submenu-inner">
+                            <ul>
+                                <li><a href="">Контакты специалистов</a></li>
+                                <li><a href="">Советы по профориентационной работе</a></li>
+                            </ul>
+                            <div class="triangle"></div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
